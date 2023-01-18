@@ -3,33 +3,13 @@ let count = 0;
 
 function cc(card) {
   // Altere apenas o código abaixo desta linha
-
-  let arr = [card];
-  for (let i = 0; i < arr.length; i++) {
-    switch (arr[i]) {
-      case 2:
-      case 3:
-      case 4:
-      case 5:
-      case 6:
-        count++;
-        break;
-      case 10:
-      case "J":
-      case "Q":
-      case "K":
-      case "A":
-        count--;
-        break;
-    }
-
-    if (count > 0) {
-      return count + " Bet";
-    } else {
-      return count + " Hold";
-    }
+  if (card <= 6) {
+    count++;
+  } else if (typeof card != typeof 1 || card === 10) {
+    // caso o tipo de card for diferente de number ou tive um numero 10 ele decrementa
+    count--;
   }
-
+  return count <= 0 ? count + " Hold" : count + " Bet";
   // Altere apenas o código acima desta linha
 }
 
