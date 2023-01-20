@@ -1,3 +1,5 @@
+
+
 const number = [1, 2, 3, 4, 5, 6];
 
 const numbersV2 = number.map((el) => el * 2);
@@ -18,4 +20,5 @@ const result = students.map(getScore).map(Math.ceil)
 console.log(result);
 
 const tt = [1, 2, 3, 4, "asd", "Asd"];
+
 

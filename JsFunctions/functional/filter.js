@@ -18,3 +18,9 @@ const students = [
 const greatStudent = (student) => student.score > 9;
 
 console.log(students.filter(greatStudent));
+
+function sayHelo() {
+    console.log("Hello Wordk");
+}
+
+export  { sayHelo};

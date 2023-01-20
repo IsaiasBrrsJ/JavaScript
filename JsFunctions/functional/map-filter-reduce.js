@@ -25,3 +25,33 @@ console.log(
         .map(getScore)
         .reduce(avg)
 );
+
+var teste = [1, 2, 3, 4, 5];
+
+var red = (acc, el) => acc + el;
+
+
+const obj = {
+    person: {
+        name: "test",
+        age: 1
+    }
+};
+
+function removeFirstTwo(list){
+
+    const [a, b, ...remove] = list;
+
+    return remove;
+}
+
+console.log(removeFirstTwo([1, 2, 3, 4, 5]));
+
+
+const obje = {
+    gear : 2,
+    setGear(gea){
+     this.gear = gea;
+  }
+};
+
