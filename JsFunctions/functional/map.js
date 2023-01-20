@@ -16,3 +16,6 @@ const getScore = el => el.score;
 const result = students.map(getScore).map(Math.ceil)
 
 console.log(result);
+
+const tt = [1, 2, 3, 4, "asd", "Asd"];
+

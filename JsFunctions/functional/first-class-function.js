@@ -1,0 +1,9 @@
+const add = function (a, b) { return a + b; };
+const subtraction = function (a, b) { return a - b; };
+const multiply = (a, b) => a * b;
+const divide = (a, b) => a / b;
+
+console.log(subtraction(5, 2));
+console.log(add(10, 20));
+console.log(multiply(10, 20));
+console.log(divide(10, 20));
