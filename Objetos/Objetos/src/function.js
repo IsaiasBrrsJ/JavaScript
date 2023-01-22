@@ -25,8 +25,7 @@ while (true) {
         continue;
     }
     if (possuiMaior === false) { break; }
-
     count++; 
 }
 console.log("\n=================array ordenado====================\n");
-Array.from(arr, i => console.log(i));
+Array.from(arr, i => console.log(i))             
