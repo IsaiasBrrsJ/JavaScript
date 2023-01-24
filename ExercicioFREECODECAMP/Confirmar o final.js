@@ -1,3 +1,23 @@
+//Usando Substring
+
+function confirmEnding(str, target) {
+
+   let tamanho = target.length;
+   let verificar = str.substring(str.length-tamanho);
+
+  if(verificar === target){
+    return true;
+  }
+  
+  return false;
+}
+
+confirmEnding("Bastian", "n");
+
+//
+
+//Usandor Lacos de repeticao
+
 function confirmEnding(str, target) {
     
     let cont  = target.split('').length;
@@ -18,6 +38,7 @@ function confirmEnding(str, target) {
 }
 
 confirmEnding("Open sesame","same");
+///
 
 
 //Seu código não deve usar o método integrado .endsWith() para resolver o desafio.
