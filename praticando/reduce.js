@@ -73,7 +73,20 @@ const mySecondObject = Characters.reduce((acc, obj) => {
     } else {
         acc[obj.city].push(obj);
     }
+
+    // if (obj.city === "Lisbon" || obj.city === "Brazil") {
+    //      acc += obj.Name+" | "+obj.city+"\n";
+    // }
+
     return acc;
 }, {});
 
-console.log(mySecondObject);
+console.log(mySecondObject["Lisbon"]);
+
+const arr = [];
+const property = "Teste";
+if (!arr[property]) {
+    arr[property] = ['isaias', 'barros']
+}
+
+console.log(arr);
