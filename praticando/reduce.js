@@ -43,3 +43,37 @@ const averageAges = people.reduce((acc, el) => {
 
 console.log(averageAges / people.filter(x => x.age > 18).length);
 
+const myArr = [
+    Name = "Isaias",
+    LastName = "Jesus"
+];
+
+const myObj = myArr.reduce((acc, key, index) => {
+    return acc[index] + key;
+    
+}, {});
+
+console.log(myObj);
+console.log("-=======================-");
+const Characters = [
+    { Id: 1, Name: "Panda", age: 30, city: "Lisbon" },
+    { Id: 2, Name: "Louva-a-Deus", age: 20, city: "Lisbon" },
+    { Id: 3, Name: "Tigresa", age: 12, city: "Usa" },
+    { Id: 4, Name: "Garça", age: 16, city: "Usa" },
+    { Id: 5, Name: "Macaco", age: 55, city: "Brazil" },
+    { Id: 6, Name: "Shifu", age: 55, city: "France" },
+    { Id: 7, Name: "TaiLung", age: 55, city: "Brazil" },
+    { Id: 8, Name: "Oogway", age: 55, city: "Lisbon" }
+];
+
+const mySecondObject = Characters.reduce((acc, obj) => {
+    
+    if (!acc[obj.city]) {
+        acc[obj.city] = [obj];
+    } else {
+        acc[obj.city].push(obj);
+    }
+    return acc;
+}, {});
+
+console.log(mySecondObject);
